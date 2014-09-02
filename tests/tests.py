@@ -68,5 +68,6 @@ class UrlRedirectMiddlewareTests(TestCase):
         })
 
         middleware = UrlRedirectMiddleware()
-        output = middleware._redirect(request, '/foo/')
-        self.assertEqual(output.url, 'http://www.site.com/foo/')
+        response = middleware._redirect(request, '/foo/')
+        url = response.get('location')
+        self.assertEqual(url, 'http://www.site.com/foo/')
