@@ -18,7 +18,7 @@ Then add it to your `INSTALLED_APPS`
 ```python
 INSTALLED_APPS = (
     ...
-    'polarize',
+    'url_redirect',
 )
 ```
 
