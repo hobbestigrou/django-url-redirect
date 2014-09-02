@@ -11,4 +11,4 @@ install:
     - pip install -q $DJANGO
     - pip install .
 
-script: ./runtests.py
+script: python runtests.py
