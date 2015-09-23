@@ -14,11 +14,11 @@ This is simply a piece of middleware which redirects URL requests based on regex
 First, install the app
 `$ pip install django-url-redirect`
 
-Then add it to your `INSTALLED_APPS`
+Then add it to your `MIDDLEWARE_CLASSES`
 ```python
-INSTALLED_APPS = (
+MIDDLEWARE_CLASSES = (
     ...
-    'url_redirect',
+    'url_redirect.middleware.UrlRedirectMiddleware',
 )
 ```
 
