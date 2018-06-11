@@ -8,7 +8,7 @@ This is simply a piece of middleware which redirects URL requests based on regex
 
 
 ## Requirements
-* Django >= 1.5
+* Django >= 1.10
 
 ## Installation
 First, install the app
